@@ -1,0 +1,39 @@
+.defaultTypography {
+  font-size: 16px;
+  font-weight: 600;
+  /* font-family: system-ui; */
+}
+
+.columnTitle {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  /* font-family: system-ui !important; */
+}
+
+.columnValue {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  /* font-family: system-ui !important; */
+  margin-top: 8px !important;
+}
+
+.SegmentTitle {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+}
+
+.CardLinkTitle {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+  color: #000;
+}
+
+.CardLinkDesc {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #565656;
+}

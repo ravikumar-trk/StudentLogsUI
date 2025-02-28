@@ -1,0 +1,18 @@
+.LinkCards {
+  border: 1px solid #bfbfbf;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 26px 16px;
+  border-left: 5px solid #fee600;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+.LinkCards:hover {
+  transform: translateY(calc(-1.5rem / 5));
+  box-shadow: 0 5px 10px rgb(30 32 37 / 12%);
+}
+.LinkCards h2 {
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "AccountID": 1,
+    "AccountCode": "AC1",
+    "AccountName": "AC1",
+    "PlaceCode": "S1U3",
+    "Status": true,
+    "CreatedOn": "",
+    "CreatedBy": "",
+    "UpdatedOn": "",
+    "UpdatedBy": ""
+  },
+  {
+    "AccountID": 2,
+    "AccountCode": "AC2",
+    "AccountName": "AC2",
+    "PlaceCode": "S2U5",
+    "Status": true,
+    "CreatedOn": "",
+    "CreatedBy": "",
+    "UpdatedOn": "",
+    "UpdatedBy": ""
+  }
+]

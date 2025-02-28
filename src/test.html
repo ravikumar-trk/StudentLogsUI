@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Asset List</title>
+	<style>
+		h1 {
+			text-decoration: underline;
+		}
+		h2 {
+			text-align: left;
+		}
+
+		td,
+		th {
+			padding: 20px 50px;
+		}
+
+		input[type="text"],
+		input[type="number"] {
+			width: 250px;
+			height: 25px;
+		}
+
+		input[type="button"] {
+			width: 100px;
+			height: 25px;
+		}
+
+		select {
+			width: 250px;
+			height: 30px;
+		}
+
+		#show {
+			margin-top: 10px;
+		}
+
+		.btn_center {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+
+	<center>
+		<h1>Project Allocation System</h1>
+		<table>
+			<tbody>
+				<tr>
+					<td>MID : <input type="text" name="MID" id="MID"></td>
+					<td>
+						Track :
+						<input type="radio" id="SDETJava" name="Track" value="SDET Java">
+						<label>SDET Java</label>
+						<input type="radio" id="SDETDigital" name="Track" value="SDET Digital">
+						<label>SDET Digital</label>
+					</td>
+
+				</tr>
+				<tr>
+					<td>Name : <input type="text" name="Name" id="Name"></td>
+					<td>
+						Project Location :
+						<select name="ProjectLocation" id="ProjectLocation">
+							<option value="">--Select--</option>
+							<option value="Bangalore">Bangalore</option>
+							<option value="Chennai">Chennai</option>
+							<option value="Pune">Pune</option>
+							<option value="Hyderbad">Hyderbad</option>
+							<option value="Kolkata">Kolkata</option>
+							<option value="Bhubaneswar">Bhubaneswar</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="btn_center"><input type="button" name="button" value="Add Record"
+						onclick="AddRecord()"></td>
+				</tr>
+			</tbody>
+		</table>
+		<br><br>
+		<h2>Project Allocation Details : </h2>
+		<div id="project-list"></div>
+		<br><br>
+
+		<input type="button" name="button" value="Counter" class="btn_center" onclick="Counter()"><br><br>
+		<label>Count : </label><span id="count"></span>
+	</center>
+
+	<script>
+		var projectListData = []
+
+		function AddRecord() {
+
+			var MID = document.getElementById("MID").value;
+			if (!MID.length) {
+				alert('Please enter MID');
+				return false;
+			}
+			else if (!MID.match(/^[M][0-9]*$/)) {
+				alert('MID is not a valid format');
+				return false;
+			}
+			else if (MID.length !== 8) {
+				alert('MID length is not valid');
+				return false;
+			}
+
+			var Track = ""
+			if (document.getElementById('SDETJava').checked) {
+				Track = "SDET Java"
+			}
+			else if (document.getElementById('SDETDigital').checked) {
+				Track = "SDET Digital"
+			}
+			else {
+				alert('Please Select Track');
+				return false;
+			}
+
+			var Name = document.getElementById("Name").value;
+			if (!Name.length) {
+				alert('Please enter name');
+				return false;
+			}
+
+
+			var ProjectLocation = document.getElementById("ProjectLocation").value;
+			if (ProjectLocation === "") {
+				alert('Select Project Location');
+				return false;
+			}
+
+
+			debugger
+
+			projectListData.push({
+				MID: MID,
+				Name: Name,
+				Track: Track,
+				ProjectLocation: ProjectLocation
+			})
+
+			let table = '<table border="1">';
+			table += `<tr><th>ID</th><th>Name</th><th>Track</th><th>Project Location</th></tr>`;
+			projectListData.forEach((movie, index) => {
+				table = table + `<tr  style="color:${movie.ProjectLocation === 'Bangalore' ? 'green' : 'black'}">`;
+				table = table + `<td>${movie.MID}</td>`;
+				table = table + `<td>${movie.Name}</td>`;
+				table = table + `<td>${movie.Track}</td>`;
+				table = table + `<td style="color:${movie.ProjectLocation === 'Hyderbad' ? 'orange' : ''}">${movie.ProjectLocation}</td>`;
+				table += `</tr>`;
+			});
+			table += "</table>";
+			document.getElementById("project-list").innerHTML = table;
+		}
+
+		function Counter() {
+			document.getElementById("count").innerHTML = projectListData.length;
+		}
+
+	</script>
+</body>
+
+</html>

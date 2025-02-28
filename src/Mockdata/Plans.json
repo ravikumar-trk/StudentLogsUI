@@ -1,0 +1,26 @@
+[
+  {
+    "PlanID": 1,
+    "PlanCode":"S1U3",
+    "NoOfSchools":1,
+    "NoOfUsers":3,
+    "Cost":1111,
+    "Status":true
+  },
+  {
+    "PlanID": 2,
+    "PlanCode":"S2U5",
+    "NoOfSchools":2,
+    "NoOfUsers":5,
+    "Cost":2222,
+    "Status":true
+  },
+  {
+    "PlanID": 3,
+    "PlanCode":"S3U10",
+    "NoOfSchools":3,
+    "NoOfUsers":10,
+    "Cost":3333,
+    "Status":true
+  }
+]

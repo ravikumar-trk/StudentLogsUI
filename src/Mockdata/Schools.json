@@ -1,0 +1,26 @@
+[
+    {
+        "SchoolID": 1,
+        "AccountID": 1,
+        "SchoolName": "S1",
+        "SchoolCode": "S2",
+        "Location": "",
+        "Status": true,
+        "CreatedOn": "",
+        "CreatedBy": "",
+        "UpdatedOn": "",
+        "UpdatedBy": ""
+    },
+    {
+        "SchoolID": 1,
+        "AccountID": 2,
+        "SchoolName": "S1",
+        "SchoolCode": "S2",
+        "Location": "",
+        "Status": true,
+        "CreatedOn": "",
+        "CreatedBy": "",
+        "UpdatedOn": "",
+        "UpdatedBy": ""
+    }
+]

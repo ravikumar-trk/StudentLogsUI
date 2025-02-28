@@ -1,0 +1,18 @@
+[
+  {
+    "StudentID": "AC1-SC1-ahgvhhjxty",
+    "StudentName": "RaviKumarTyadi",
+    "AccountID": 1,
+    "SchoolID": 2,
+    "SchoolCode": "",
+    "AdmissionNo": 11,
+    "ClassCode": "2",
+    "RollNo": 12,
+    "ContactNo": 12324,
+    "Status": true,
+    "CreatedOn": "",
+    "CreatedBy": "",
+    "UpdatedOn": "",
+    "UpdatedBy": ""
+  }
+]

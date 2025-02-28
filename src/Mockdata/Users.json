@@ -1,0 +1,30 @@
+[
+  {
+    "UserID": 1,
+    "AccountID": 1,
+    "UserName": "US1",
+    "Email": "",
+    "Password": "",
+    "Type": "",
+    "Schools": "S1,S2",
+    "Status": true,
+    "CreatedOn": "",
+    "CreatedBy": "",
+    "UpdatedOn": "",
+    "UpdatedBy": ""
+  },
+  {
+    "UserID": 2,
+    "AccountID": 1,
+    "UserName": "US1",
+    "Email": "",
+    "Password": "",
+    "Type": "",
+    "Schools": "S1,S2",
+    "Status": true,
+    "CreatedOn": "",
+    "CreatedBy": "",
+    "UpdatedOn": "",
+    "UpdatedBy": ""
+  }
+]
